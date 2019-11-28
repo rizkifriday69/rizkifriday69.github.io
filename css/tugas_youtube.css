@@ -1,0 +1,56 @@
+
+.div1 {
+    border: 1px solid gray;
+    text-align:center;
+    width: 300px;
+    color: moccasin;
+    height: 500px;
+    margin-top: 80px;
+    margin-left: 520px;
+    border-radius: 10px;
+    background-color:orangered;
+    opacity: 0.8;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+img {
+    width: 240px;
+    height: 150px;
+    margin-top: 30px;
+}
+.div2 {
+    text-align:center;
+    font-size: 30px;
+    margin-top: 25px;
+}
+.div3 {
+    float: left;
+    margin-left: 20px;
+    margin-top: 20px;
+    position : static;
+}
+.div3 a {
+    text-decoration: none;
+}
+.div4 {
+    margin-top: 50px;
+}
+.div3 a {
+    margin-top: 100px;
+}
+button {
+    border: 1px solid gray;
+    border-radius: 10px;
+    width: 100px;
+    height: 50px;
+    margin-top: 20px;
+    margin-right:10px;
+    transition:0.2s;
+    cursor:pointer;
+}
+.button a {
+    text-decoration: none;
+}
+.button:hover {
+    margin-top:-0.5px;
+    background-color: lightblue;
+}

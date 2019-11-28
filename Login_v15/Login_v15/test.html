@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<script>
+	
+	var arrdata=[
+	['egi','supriadi'],
+	['abdul','aziz'],
+	['abdull','hafiz']
+	];
+	function login() {
+		var usr = document.getElementById('user').value;
+		var psw = document.getElementById('pass').value;
+
+		var x=0;
+		for (var i = 0; i < arrdata.length; i++) {
+			if (usr==arrdata[i][0] && psw==arrdata[i][1]) {
+				window.location.href='ytb/nyoba.html';
+				x=1;
+				break;
+			}
+		}
+		if (x==0) {
+			window.location.href="error.html";
+		}
+	}
+</script>
+<body>
+<input type="text" name="" id="user">
+<input type="password" name="" id="pass">
+<button onclick="login()">test</button>
+</body>
+</html>

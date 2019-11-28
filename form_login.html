@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Form Login</title>
+    <link rel="stylesheet" href="css/tugas_youtube.css">
+
+    <script>
+            function klik(){
+                var betul = false;
+    
+                var users = ['muhamadrizki0011@gmail.com','hendra','ripal','revan'];
+                var passwords = ['bacot123','burik','okeh','hoream'];
+    
+                var usernm = document.getElementById("user").value;
+                var passwd = document.getElementById("password").value;
+    
+                if ((usernm == null || usernm == '') || (passwd == null || passwd == '') ) {
+                    alert("Harus Diisi waa, Tidak Boleh Kosong Waaa");
+                    return;
+                }else {
+                    for (var i = 0; i < users.length;i++) {
+                        if (users[i].toLowerCase() == usernm && passwords[i].toLowerCase() == passwd){
+                            document.location.href = "single-video.html";
+    
+                            betul = true;
+                            break;
+                            }
+                        }
+                        if(!betul) {
+                            alert("gagaaallllll");
+                        }
+                    }
+                }
+            
+        
+    </script>
+</head>
+<body style="  background-image: url(images/bg_youtube.jpg);
+background-size: cover;"> 
+        <div class="div1">	
+                <img src="images/play-btn-hover.png" style="width: 170px;height:120px;">
+                <div class="div2"><b>Log In</b></div>
+                <div class="div3"><b>Username</b></div>
+                <div class="div4"><input type="text" placeholder="Masukan Username" name="username" size="32" id="user"></div>
+                <div class="div3"><b>Pasword</b></div>
+                <div class="div4"><input type="password" placeholder="Masukan Pasword" name="password" size="32" id="password"></div>
+                <button class="button" onclick="klik()">Log In</button>
+                <br><br>
+                <div class="div3"><a href="#">Lupa Pasword</a></div>
+                
+            </div>
+        
+
+    
+</body>
+</html>
