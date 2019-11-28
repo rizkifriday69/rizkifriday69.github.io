@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compsatible" content="ie=edge">
+    <title>Callback JSON Data</title>
+
+    <script src="jquery-3.4.1.min.js"></script>
+
+    <script>
+        // var json = [{'nama':'Rizki'},{'nama':'Ripal'},{'nama': 'irsyad'}];
+
+
+        // for (var i = 0; i < Object.keys(json).length; i++) {
+        //     document.write((i+1) + '.<h3>' + json[i].nama+'</h3>')
+            
+        // }
+          $(document).ready(function(){
+            $.getJSON('JSON.json',
+                function(data){
+                    for(var i = 0 ; i < data.Handphone.length; i++){
+                        $('#viewverContent').append(
+                            '<p> id : '+ data.Handphone[i].id + 
+                            '</p>'+'<p> Merk : '+ data.Handphone[i].Merk_HP + 
+                            '</p>'+'<p> Harga : '+ data.Handphone[i].RAM + 
+                            '</p>'+'<p> RAM : ' + data.Handphone[i].ROM +
+                            '</p>'+'<br>')
+                    }});
+                
+        });
+    //     $.ajax({
+    //         url: 'JSON.json',
+    //         type: 'POST',
+    //         dataType: "json",
+    //             success: function handledata(data){
+    //                 var strjosn = JSON.stringify(data);
+    //                 // document.getElementById("viewverContent").innerHTML = strjosn;
+
+    //                 //  document.getElementById("viewverContent").innerHTML = data.Handphone[0].Merk_HP;
+
+    //                  for(var i = 0 ; i < data.Handphone.length; i++){
+    //                     $('#viewverContent').append(
+    //                         '<p> id : '+ data.Handphone[i].id + 
+    //                         '</p>'+'<p> Merk : '+ data.Handphone[i].Merk_HP + 
+    //                         '</p>'+'<p> Harga : '+ data.Handphone[i].RAM + 
+    //                         '</p>'+'<p> RAM : ' + data.Handphone[i].ROM +
+    //                         '</p>'+'<br>')
+                    
+
+    //                 // setTimeout(function(){
+    //                 //     document.getElementById("viewverContent").innerHTML = strjosn;
+    //                 // }, 1000);
+
+    //                 //   return data.Handphone.length;
+                        
+    //             //         error:function{
+    //             //      return "";
+    //             //  }
+                    
+
+    //             }
+    //             }
+    //     });
+    // });
+        
+    </script>
+</head>
+<body>
+    <div id="viewverContent"></div>
+    ----------------------------------------
+    
+</body>
+</html>

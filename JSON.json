@@ -1,0 +1,29 @@
+{
+    "Handphone":
+        [
+            {"id":1,
+            "Merk_HP":"Samsung A20",
+            "RAM":"4gb",
+            "ROM":"128gb"},
+
+            {"id":2,
+            "Merk_HP":"Iphone 11",
+            "RAM":"8gb",
+            "ROM":"256gb"},
+
+            {"id":3,
+            "Merk_HP":"Xiaomi BlackShark",
+            "RAM":"16gb",
+            "ROM":"256gb"},
+
+            {"id":4,
+            "Merk_HP":"Asus ROG phone",
+            "RAM":"16gb",
+            "ROM":"256gb"},
+
+            {"id":5,
+            "Merk_HP":"Realmi 3 Pro",
+            "RAM":"8gb",
+            "ROM":"128gb"}
+        ]
+}
